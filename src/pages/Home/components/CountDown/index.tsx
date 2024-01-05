@@ -4,8 +4,7 @@ import { differenceInSeconds } from 'date-fns'
 import { CyclesContext } from '../..'
 
 export function CountDown() {
-  const { activeCycle, activeCycleId, markCurrentCycleAsFinished } =
-    useContext(CyclesContext)
+  const { activeCycle, activeCycleId, markCurrentCycleAsFinished } = useContext(CyclesContext)
   const [amountSecondsPassed, setAmountSecondsPassed] = useState(0)
 
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0
@@ -22,7 +21,6 @@ export function CountDown() {
 
         if (secondsDifference >= totalSeconds) {
           markCurrentCycleAsFinished()
-
           setAmountSecondsPassed(totalSeconds)
           clearInterval(interval)
         } else {
