@@ -1,6 +1,6 @@
 {
-  "homepage": "https://navestelar.github.io/Ignite-Timer/",
-  "name": "02-ignite-timer",
+  "homepage": "https://navestelar.github.io/ignite-timer/",
+  "name": "ignite-timer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
